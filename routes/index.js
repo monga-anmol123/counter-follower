@@ -48,4 +48,13 @@ router.get('/',(req,res)=>{
     console.log("APP Opened")
     res.send("App by Anmol Monga")
 })
+router.get('/getVars', (req,res)=>{
+    const  app_id= process.env.APP_ID;
+    const app_secret= process.env.app_secret
+    const redirect_url= process.env.REDIRECT_URL
+
+    console.log(`app_id-> ${app_id}, app_secret-${app_secret} , redirect_url- ${redirect_url}`);
+
+    res.status(200).send("GOOD");
+})
 module.exports= router
