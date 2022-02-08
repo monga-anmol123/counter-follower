@@ -1,6 +1,6 @@
 require('dotenv').config()
 
-const port= process.env.HOST_PORT
+const port= process.env.HOST_PORT || 3000
 
 const express= require('express')
 
