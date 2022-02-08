@@ -45,6 +45,7 @@ catch(err)
 })
 
 router.get('/',(req,res)=>{
+    console.log("APP Opened")
     res.send("App by Anmol Monga")
 })
 module.exports= router
